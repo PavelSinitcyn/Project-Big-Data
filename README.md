@@ -18,9 +18,9 @@
                    Postgres (справочник device_types: ddl.sql / dml.sql)
 ```
 
-## Что реализовано (по требованиям)
+## Что реализовано
 
-- **Генератор сообщений** раз в секунду от IoT-устройств (тип, время события, температура, влажность) → публикация в топик Kafka — [generator/iot_generator.py](generator/iot_generator.py).
+- **Генератор сообщений** раз в секунду от IoT-устройств (тип, время события, температура, влажность) → публикация в топик Kafka - [generator/iot_generator.py](generator/iot_generator.py).
 - **DDL/DML скрипты** для справочника типов устройств (`id`, `type_name`) — [sql/ddl.sql](sql/ddl.sql), [sql/dml.sql](sql/dml.sql).
 - **Flink, event time** — [flink_job/job.py](flink_job/job.py):
   - источник **kafka** и источник **pg** на **SQL/Table API**;
