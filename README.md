@@ -1,3 +1,4 @@
+# Big Data 2026, Синицын Павел
 # Заключительный проект: IoT + Kafka + Flink + Postgres
 
 Потоковая обработка событий от IoT-устройств на PyFlink в режиме **event time**.
